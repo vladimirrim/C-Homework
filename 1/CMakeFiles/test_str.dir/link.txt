@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/test_str.dir/src/test.c.o CMakeFiles/test_str.dir/src/test_cmp.c.o CMakeFiles/test_str.dir/src/test_cpy.c.o CMakeFiles/test_str.dir/src/test_len.c.o CMakeFiles/test_str.dir/src/test_cat.c.o  -o test_str -rdynamic 

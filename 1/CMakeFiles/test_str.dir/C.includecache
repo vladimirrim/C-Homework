@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vladimir/MLG/C++/C-Homework/1/include/str_test.h
+
+/home/vladimir/MLG/C++/C-Homework/1/src/test.c
+../include/str_test.h
+/home/vladimir/MLG/C++/C-Homework/1/include/str_test.h
+stdio.h
+-
+
+/home/vladimir/MLG/C++/C-Homework/1/src/test_cat.c
+../include/str_test.h
+/home/vladimir/MLG/C++/C-Homework/1/include/str_test.h
+stdio.h
+-
+
+/home/vladimir/MLG/C++/C-Homework/1/src/test_cmp.c
+../include/str_test.h
+/home/vladimir/MLG/C++/C-Homework/1/include/str_test.h
+stdio.h
+-
+
+/home/vladimir/MLG/C++/C-Homework/1/src/test_cpy.c
+../include/str_test.h
+/home/vladimir/MLG/C++/C-Homework/1/include/str_test.h
+stdio.h
+-
+
+/home/vladimir/MLG/C++/C-Homework/1/src/test_len.c
+../include/str_test.h
+/home/vladimir/MLG/C++/C-Homework/1/include/str_test.h
+stdio.h
+-
+

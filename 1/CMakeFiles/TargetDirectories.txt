@@ -1,0 +1,3 @@
+/home/vladimir/MLG/C++/C-Homework/1/CMakeFiles/edit_cache.dir
+/home/vladimir/MLG/C++/C-Homework/1/CMakeFiles/rebuild_cache.dir
+/home/vladimir/MLG/C++/C-Homework/1/CMakeFiles/test_str.dir
