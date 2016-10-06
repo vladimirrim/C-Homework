@@ -40,7 +40,6 @@ int main(){
     printf("%s %s %s\n",b[0],b[1],b[2]);
     printf("%c %c %c\n",c[0],c[1],c[2]);
     free(a);
-    free(b);
     free(c);
     return 0;
 }
