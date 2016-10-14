@@ -1,14 +1,15 @@
-PROG=MergeSort
-LIST=$(addprefix $(./bin/)/, $(PROG))
 
-MergeSor: main.o mergesort.o
-	gcc main.o mergesort.o -o MergeSort
+main: main.o position.o clist.o
+	gcc main.o clist.o position.o -o main
 
-main.o: ./src/main.c ./include/merge.h
-	gcc -c ./src/main.c -o main.o
+main.o: ./src/main.c ./include/position.h ./include/clist.h
+	gcc -c -std=c99 ./src/main.c -o main.o
 
-mergesort.o: ./src/mergesort.c ./include/merge.h
-	gcc -c ./src/mergesort.c -o mergesort.o
+position.o: ./src/position.c ./include/position.h ./include/clist.h
+	gcc -c -std=c99 ./src/position.c -o position.o
+
+clist.o: ./src/clist.c ./include/clist.h
+	gcc -c -std=c99 ./src/clist.c -o clist.o
 
 clean:
-	rm main.o mergesort.o ./MergeSort
+	rm main.o clist.o position.o ./main
