@@ -37,7 +37,6 @@ void start_element(void *data, const char *element, const char **attribute) {
     for (i = 0; attribute[i]; i += 2) {
         if(!strcmp(attribute[i],"name")){
             cnt = 0;
-            printf("%d\n",phonebook->size);
             char *tmp=(char *)malloc(sizeof(char)*256);
             strcpy(tmp,attribute[i+1]);
             strcpy((phonebook->humans + phonebook->size)->name,strtok(tmp," "));
