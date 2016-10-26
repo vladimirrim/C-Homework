@@ -16,6 +16,7 @@ typedef struct phonebook_s {
     size_t capacity;
 } phonebook_t;
 void resize_book(phonebook_t *book);
+int parse_xml(char *buff, unsigned buff_size,const char *filename,phonebook_t *book);
 int load_phonebook_xml(const char *filename, phonebook_t *book);
 int save_phonebook_xml(const char *filename, phonebook_t *book);
 void print_phonebook(phonebook_t *book);
