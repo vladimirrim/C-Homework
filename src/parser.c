@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <expat.h>
-#define BUFFER_SIZE 100000
+#define BUFFER_SIZE 5
 
 typedef struct my_data{
    phonebook_t *book;
@@ -39,16 +39,15 @@ void handle_data(void *data, const char *content, int length) {
     char *tmp = malloc(length+10);
     strncpy(tmp, content, length);
     tmp[length] = '\0';
+    int i=((my_data*)data)->cnt;
+    int j=((my_data*)data)->book->size-1;
     if(tmp[0]>='0'&&tmp[0]<='9'){
-      int i=((my_data*)data)->cnt;
-      int j=((my_data*)data)->book->size-1;
       if(((my_data*)data)->overflow==0){
         strcpy(((((my_data*)data)->book->humans + j)->phones[i]),tmp);
         ((my_data*)data)->cnt++;
         (((my_data*)data)->book->humans+j)->phones_num++;
        }else{
-       
-       strcat(((((my_data*)data)->book->humans + j)->phones[i]),tmp);
+        strcat(((((my_data*)data)->book->humans + j)->phones[i]),tmp);
        }
         ((my_data*)data)->overflow=1;
     }
