@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <expat.h>
 #include <string.h>
-#define BUFFER_SIZE 10000
+#define BUFFER_SIZE 1
 int cmp_humans(const void *a,const void *b){
     return strcmp(((human_t *)a)->family_name,((human_t *)b)->family_name);
 }

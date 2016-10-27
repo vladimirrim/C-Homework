@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <expat.h>
-#define BUFFER_SIZE 10000
+#define BUFFER_SIZE 1
 
 typedef struct my_data{
    phonebook_t *book;
